@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #020202;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 300;
+  font-family: 'Gruppo', cursive;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0 20px rgba(255,255,255,0.8);
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layer-stars {
+  background-image: url("images/star-bg.jpg");
+  z-index: 10;
+}
+
+.layer-nebula {
+  background-image: url("images/nebula-bg.jpg");
+  opacity: 0.6;
+  z-index: 20;
+}
+
+.layer-mountains {
+  background-image: url("images/mountain.png");
+  background-position: bottom;
+  background-size: cover;
+  z-index: 30;
+}
+
+.layer-planet {
+  background-image: url("images/planet.png");
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: right 20% bottom 10%;
+  z-index: 40;
+}
+
+.layer-fog {
+  background-image: url("images/fod.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  z-index: 50;
+  opacity: 0.8;
+}
+
+.layer-ship {
+  background-image: url("images/spaceship.png");
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: 60% 70%;
+  z-index: 60;
+}
+
+.layer-meteor {
+  background-image: url("images/meteor.png");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  z-index: 70;
+}
+
+.layer-meteor-1 {
+  background-image: url("images/meteor-1.png");
+  background-size: 180px;
+  background-repeat: no-repeat;
+  background-position: 10% 20%;
+  z-index: 80;
+}
+
+.content {
+  position: relative;
+  background: linear-gradient(to bottom, #000 10%, #111 70%, #000);
+  padding: 6rem 20rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  z-index: 100;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Gruppo', cursive;
+}
+
+@media (max-width: 900px) {
+  .content {
+    padding: 3rem;
+  }
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
